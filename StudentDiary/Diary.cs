@@ -8,8 +8,8 @@ namespace StudentDiary
 {
     class Diary
     {
-        // Stan 
-        List<float> ratings;
+        // Stan (zmienne - pola)
+        List<float> ratings = new List<float>();
 
         // Zachowania
         public void AddRating(float rating)
@@ -19,7 +19,7 @@ namespace StudentDiary
 
         public float CalculateAverage()
         {
-            float sum = 0; avg = 0;
+            float sum = 0, avg = 0;
 
             foreach (var rating in ratings)
             {
@@ -29,15 +29,15 @@ namespace StudentDiary
             avg = sum / ratings.Count();
             return avg;
 
-            public float GiveMaxRating()
-            {
-                return ratings.Max();
-            }
+        }
+        public float GiveMaxRating()
+        {
+             return ratings.Max();
+        }
 
-            public float GivenMinRating()
-            {
-                return ratings.Min();
-            }
+        public float GivenMinRating()
+        {
+             return ratings.Min();
         }
     }
 }
