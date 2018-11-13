@@ -8,6 +8,11 @@ namespace StudentDiary
 {
     class Diary
     {
+        public Diary()    // stworzenie konstruktora przy uzycia snipietu ctor + 2x tab
+        {
+            ratings = new List<float>();
+        }
+
         // Stan (zmienne - pola)
         List<float> ratings = new List<float>();
 
